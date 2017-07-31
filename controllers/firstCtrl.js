@@ -1,5 +1,5 @@
-app.controller("FirstCtrl", function FirstCtrl(greeting) {
+app.controller("FirstCtrl", function FirstCtrl(userData) {
   var first = this;
 
-  first.greeting = greeting;
+  first.userData = userData;
 });

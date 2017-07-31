@@ -1,6 +1,8 @@
-First Name <input type="text" ng-model="first.greeting.firstName"><br>
-Last Name <input type="text" ng-model="first.greeting.lastName"><br>
-Phone <input type="text" ng-model="first.greeting.phone"><br>
-Email <input type="text" ng-model="first.greeting.email"><br>
+<form novalidate class="center-style">
+    <input type="text" ng-model="first.userData.firstName" placeholder="First Name"><br>
+    <input type="text" ng-model="first.userData.lastName" placeholder="Last Name"><br>
+    <input type="text" ng-model="first.userData.phone" placeholder="Phone Number"><br>
+    <input type="text" ng-model="first.userData.email" placeholder="Email"><br>
 
-<button ui-sref="second">Go to second</button>
+    <button ui-sref="second">Go to second</button>
+</form>

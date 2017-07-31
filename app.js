@@ -1,8 +1,10 @@
 let app = angular.module('app', ['ui.router']);
 
 app.config(function config($stateProvider, $urlRouterProvider) {
+ 
+//otherwise defaults to the home screen when there is no valid url
   $urlRouterProvider.otherwise('/home');
-
+//state determines what is displayed on each view.
   $stateProvider.state("home", {
     url: "/home",
     controller: "FirstCtrl as first",
@@ -20,26 +22,7 @@ app.config(function config($stateProvider, $urlRouterProvider) {
   })
 });
 
-// app.controller("FirstCtrl", function FirstCtrl(greeting) {
-//   var first = this;
-
-//   first.greeting = greeting;
-// });
-
-// app.controller("SecondCtrl", function SecondCtrl(greeting) {
-//   var second = this;
-
-//   second.greeting = greeting;
-// });
-
-// app.controller("ThirdCtrl", function ThirdCtrl(greeting) {
-//   var third = this;
-
-//   third.greeting = greeting;
-// });
-
-app.service("greeting", function Greeting() {
-  var greeting = this;
-
-  greeting.firstName = "";
+//this is pulling in the user input from the first and second Ctrls to fill out the third state
+app.service("userData", function userData() {
+  var userData = this;
 });
