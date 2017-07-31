@@ -20,26 +20,9 @@ app.config(function config($stateProvider, $urlRouterProvider) {
   })
 });
 
-// app.controller("FirstCtrl", function FirstCtrl(greeting) {
-//   var first = this;
 
-//   first.greeting = greeting;
-// });
+app.service("userData", function userData() {
+  var userData = this;
 
-// app.controller("SecondCtrl", function SecondCtrl(greeting) {
-//   var second = this;
-
-//   second.greeting = greeting;
-// });
-
-// app.controller("ThirdCtrl", function ThirdCtrl(greeting) {
-//   var third = this;
-
-//   third.greeting = greeting;
-// });
-
-app.service("greeting", function Greeting() {
-  var greeting = this;
-
-  greeting.firstName = "";
+  // userData.firstName = "";
 });

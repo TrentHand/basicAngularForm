@@ -1,5 +1,5 @@
-app.controller("ThirdCtrl", function ThirdCtrl(greeting) {
+app.controller("ThirdCtrl", function ThirdCtrl(userData) {
   var third = this;
 
-  third.greeting = greeting;
+  third.userData = userData;
 });

@@ -1,7 +1,11 @@
-Address1 <input type="text" ng-model="second.greeting.address1"><br>
-Address2 <input type="text" ng-model="second.greeting.address2"><br>
-City <input type="text" ng-model="second.greeting.city"><br>
-State <input type="text" ng-model="second.greeting.state"><br>
-Zip <input type="text" ng-model="second.greeting.zip"><br>
+<form novalidate class="center-style ">
+    <input type="text" ng-model="second.userData.address1" placeholder="Address1 "><br>
+    <input type="text" ng-model="second.userData.address2" placeholder="Address2 "><br>
+    <input type="text" ng-model="second.userData.city" placeholder="City "><br>
+    <input type="text" ng-model="second.userData.state" placeholder="State "><br>
+    <input type="text" ng-model="second.userData.zip" placeholder="Zip "><br>
 
-<button ui-sref="finished">Complete</button>
+    <button ui-sref="home">1st Page</button>
+    <button ui-sref="finished">Complete</button>
+
+</form>
